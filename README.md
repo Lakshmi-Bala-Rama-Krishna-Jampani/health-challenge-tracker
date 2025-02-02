@@ -3,14 +3,14 @@
 A fitness tracking app built with **Angular 14+**.
 
 ## Features
-✔️ Add users and workouts
-✔️ Search by name
-✔️ Filter by workout type
-✔️ Pagination for more than 5 users
-✔️ Stores data in localStorage
-✔️ Unit tests with 100% code coverage
-✔️ Deployed online
-✔️ Display workout progress using charts 
+- Add users and workouts
+- Search by name
+- Filter by workout type
+- Pagination for more than 5 users
+- Stores data in localStorage
+- Unit tests with 100% code coverage
+- Deployed online
+- Display workout progress using charts 
 
 ## Tech Stack
 - **Framework:** Angular 14+
