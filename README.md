@@ -8,6 +8,7 @@ A fitness tracking app built with **Angular 14+**.
 ✔️ Filter by workout type  
 ✔️ Pagination for more than 5 users  
 ✔️ Stores data in `localStorage`  
+✔️ Display workout progress using charts
 ✔️ Unit tests with **100% code coverage**  
 ✔️ Deployed online  
 
@@ -31,7 +32,8 @@ A fitness tracking app built with **Angular 14+**.
 
 Running Tests:
     ng test --code-coverage
-    Coverage report available in coverage/index.html.
+
+Coverage report available in coverage/index.html.
 
 Deployment
 App is live at:
