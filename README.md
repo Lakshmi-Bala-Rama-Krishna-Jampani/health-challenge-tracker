@@ -19,7 +19,7 @@ A fitness tracking app built with **Angular 14+**.
 ## Installation & Setup
 1. Clone the repository:
    ```sh
-   git clone https://github.com/YOUR_USERNAME/health-challenge-tracker.git
+   git clone https://github.com/Lakshmi-Bala-Rama-Krishna-Jampani/health-challenge-tracker.git
    cd health-challenge-tracker
 
 2. Install dependencies:
