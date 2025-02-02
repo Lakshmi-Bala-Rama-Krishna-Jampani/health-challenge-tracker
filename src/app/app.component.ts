@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'health-tracker';
+  showChart = false;
+
+  ngOnInit() {
+    this.showChart = false;
+  }
+  prevPage() {
+    this.showChart = false;
+  }
+
+  toggleChart(event: boolean) {
+    this.showChart = event;
+  }
 }

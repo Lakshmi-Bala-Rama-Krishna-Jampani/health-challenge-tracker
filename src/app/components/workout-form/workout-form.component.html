@@ -1,0 +1,25 @@
+<form #workoutForm="ngForm" (ngSubmit)="addWorkout(workoutForm)">
+    <div class="p-4 border rounded-lg shadow-lg" fxLayout="column" fxLayoutAlign="space-between center">
+        <mat-form-field class="mb-2" fxFlex="25%">
+            <mat-label>Enter Name</mat-label>
+            <input matInput [(ngModel)]="userName" name="userName" required />
+        </mat-form-field>
+
+        <mat-form-field class="mb-2" fxFlex="25%">
+            <mat-label>Workout Type</mat-label>
+            <mat-select [(ngModel)]="workoutType" name="workoutType" required>
+                <mat-option *ngFor="let type of workoutTypes" [value]="type">{{ type }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="mb-2" fxFlex="25%">
+            <mat-label>Workout Minutes</mat-label>
+            <input matInput type="number" [(ngModel)]="workoutMinutes" name="workoutMinutes" required />
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" type="submit" fxFlex="10%">Add Workout</button>
+    </div>
+</form>
+<div class="mt-16 flex justify-center items-center">
+    <button mat-raised-button color="accent" (click)="toggleChart()">View Progress Chart</button>
+</div>

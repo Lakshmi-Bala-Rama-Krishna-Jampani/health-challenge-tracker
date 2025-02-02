@@ -1,0 +1,20 @@
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+
+  <div class="bg-white p-4 border rounded-lg shadow-lg h-[25rem] overflow-y-auto">
+    <div class="space-y-2">
+      <div *ngFor="let user of workouts" (click)="selectUser(user)" [class.bg-gray-200]="selectedUser?.id === user.id"
+        class="p-3 rounded cursor-pointer hover:bg-gray-100 transition-colors border-b-[1px] border-gray-300 truncate">
+        {{ user.name }}
+      </div>
+    </div>
+  </div>
+
+  <div class="md:col-span-2 bg-white border rounded-lg shadow-lg p-2 px-4">
+    <h2 class="text-2xl font-bold mb-4 flex items-center" *ngIf="selectedUser">
+      <span class="inline-block max-w-xs truncate">{{ selectedUser.name }}</span>'s workout progress
+    </h2>
+    <div class="h-[400px]">
+      <canvas #workoutChart></canvas>
+    </div>
+  </div>
+</div>
